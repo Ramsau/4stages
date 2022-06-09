@@ -12,7 +12,7 @@ def text(request, path: str):
     if path == 'fuer':
         path = 'für'
     if path in ['denn', 'für', 'mich', 'ist', 'christus', 'das', 'leben', 'und', 'sterben', 'ein', 'gewinn']:
-        return HttpResponse(path)
+        return render(request, path + '.html')
     else:
         raise Http404()
 

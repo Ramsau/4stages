@@ -2,9 +2,12 @@
 <head>
 <style>
     body {
-        color: black;
+        color: white;
         font-style: italic;
-        font-family: "Roboto", "Lucida Grande", Verdana, Arial, sans-serif
+        font-family: "DejaVu Sans Mono";
+        font-weight: bold;
+        padding: 0;
+        margin: 0;
     }
     #wrapper {
         height: 100%;
@@ -14,6 +17,8 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        background: rgb(245,50,255);
+        background: linear-gradient(38deg, rgba(245,50,255,1) 0%, rgba(241,251,45,1) 100%);
     }
     img {
         object-fit: cover;
@@ -26,17 +31,14 @@
     }
     a {
         color: black;
-        background-color: white;
-        padding: 1em;
     }
 </style>
 </head>
 <body>
     <div id="wrapper">
-        <img src="{% static "sunrays.jpg" %}" alt="">
         <p>
-            <h1>Philipper 1: Leben und Sterben</h1><br>
-            <a href="denn">los geht's</a>
+            <h1>Denn</h1><br>
+            <a href="für">weiter</a>
         </p>
     </div>
 </body>

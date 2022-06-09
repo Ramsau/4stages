@@ -1,0 +1,54 @@
+{% load static %}
+<head>
+<style>
+    body {
+        color: black;
+        font-family: "Roboto", "Lucida Grande", Verdana, Arial, sans-serif;
+        margin: 0;
+    }
+    #wrapper {
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+    img {
+        object-fit: cover;
+        width: 20cm;
+        z-index: -1;
+        margin: auto;
+    }
+    a {
+        color: #7e7e7e;
+        font-size: 15pt;
+        position: absolute;
+        left: 50%;
+        top: 0;
+        filter: blur(0.8pt);
+    }
+    h1 {
+        font-size: 40pt;
+        font-weight: bolder !important;
+        background-color: white;
+        border-radius: 10pt;
+        padding: 10pt;
+        box-shadow: 5px 5px 0px 5px #a1c9ff;
+    }
+    span {
+        font-size: 40pt;
+        font-weight: bold;
+    }
+</style>
+</head>
+<body>
+    <div id="wrapper">
+        <img src="{% static "christus.png" %}" alt="">
+        <p>
+
+        </p>
+    </div>
+</body>
