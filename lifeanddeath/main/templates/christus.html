@@ -18,9 +18,19 @@
     }
     img {
         object-fit: cover;
-        width: 20cm;
         z-index: -1;
         margin: auto;
+    }
+
+    @media (min-width: 20cm) {
+        img {
+            width: 20cm;
+        }
+    }
+    @media (max-width: 20cm) {
+        img {
+            width: 6cm;
+        }
     }
     a {
         color: #7e7e7e;
