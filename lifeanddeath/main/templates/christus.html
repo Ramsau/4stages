@@ -22,16 +22,18 @@
         margin: auto;
     }
 
-    @media (min-width: 20cm) {
+    @media only screen (min-width: 20cm) {
         img {
             width: 20cm;
         }
     }
-    @media (max-width: 20cm) {
+    @media only screen  (max-width: 20cm) {
         img {
-            width: 6cm;
+            width: 6cm; !important;
+            max-width: 6cm; !important
         }
     }
+
     a {
         color: #7e7e7e;
         font-size: 15pt;
