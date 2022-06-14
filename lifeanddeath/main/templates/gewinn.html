@@ -14,7 +14,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: #4793ff;
         padding: 0;
     }
     img {
@@ -33,20 +32,16 @@
         left: 0;
         bottom: 0;
     }
-    h1 {
-        font-size: 40pt;
-        font-weight: bolder !important;
-        background-color: white;
-        border-radius: 10pt;
-        padding: 10pt;
-        box-shadow: 5px 5px 0px 5px #a1c9ff;
-    }
 </style>
 </head>
 <body>
     <div id="wrapper">
-        <p>
-            <h1>Gewinn</h1><br>
-        </p>
+        <h1>Gewinn!</h1><br>
+        Geben Sie den Geheimsatz ein, um sich Ihren Preis zu sichern:
+        <form method="post" action="/geheimsatz">
+            {% csrf_token %}
+            <input type="text" name="text">
+            <button>Absenden</button>
+        </form>
     </div>
 </body>

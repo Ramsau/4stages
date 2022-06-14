@@ -20,18 +20,7 @@ import main.views
 
 urlpatterns = [
     path('', main.views.index),
-    path('<str:path>', main.views.text),
-    re_path(r'^(?i)denn', main.views.denn),
-    re_path(r'^(?i)für', main.views.für),
-    re_path(r'^(?i)fuer', main.views.für),
-    re_path(r'^(?i)mich', main.views.mich),
-    re_path(r'^(?i)ist', main.views.ist),
-    re_path(r'^(?i)christus', main.views.christus),
-    re_path(r'^(?i)das', main.views.das),
-    re_path(r'^(?i)leben', main.views.leben),
-    re_path(r'^(?i)und', main.views.und),
-    re_path(r'^(?i)sterben', main.views.sterben),
-    re_path(r'^(?i)ein', main.views.ein),
-    re_path(r'^(?i)gewinn', main.views.gewinn),
+    re_path(r'^(?i)geheimsatz', main.views.geheimsatz),
+    path('<str:path>', main.views.text, name='text'),
     path('admin/', admin.site.urls),
 ]
